@@ -16,7 +16,7 @@ def get_prediction_model():
 
     if request.method == 'GET':
         print('In GET method')
-
+        print('For git')
         # code for flask
         age= request.args.get('age')
         sex= request.args.get('sex')
