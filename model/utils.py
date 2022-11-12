@@ -25,6 +25,7 @@ class Medical_Insurance():
             self.model = pickle.load(f)
         
     def get_prediction(self):
+        print('Prediction function')
 
         self.load_model()                                                          # calling model
 
