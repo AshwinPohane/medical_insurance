@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insurance</title>
+</head>
+<body style="background-color: rgb(151, 128, 215)">
+    <h1>
+        Welcome to Medical Insurance Charges
+    </h1>
+    <form action="/medical-insurance-prediction" method="GET">
+        <label for="age">AGE : </label>
+            <input type="text" name="age" placeholder="Enter your age">
+        <br><br>
+
+        <label for="sex">SEX :</label><br>
+            <input type="radio" value="male" name="sex">Male     </input>
+            <input type="radio" value="female" name="sex">Female   </input>
+        <br><br>
+
+        <label for="bmi">BMI : </label>
+            <input type="text" name="bmi" placeholder="Enter your BMI ">
+        <br><br>
+
+        <label for="children">CHILD :</label>
+            <select name="children">
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        <br><br>
+
+        <label for="smoker">DO YOU SMOKE ? :</label>
+            <select name="smoker">
+                <option value=""></option>
+                <option value="yes">YES</option>
+                <option value="no">NO</option>
+                
+            </select>
+        <br><br>
+
+        <label for="region">SELECT REGION</label>
+            <select name="region">
+                <option value=""></option>
+                <option value="northeast">northeast</option>
+                <option value="northwest">northwest</option>
+                <option value="southwest">southwest</option>
+                <option value="southeast">southeast</option>
+            </select>
+        <br><br><br>
+
+        <input type="submit" value="SUBMIT">
+        <br>
+
+        <p>Your Medical Insurance Charges would be : $ <b>{{med_pred}}</b> /-</p>
+
+    </form>
+    
+</body>
+</html>
