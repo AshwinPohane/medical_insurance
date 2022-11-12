@@ -7,3 +7,5 @@ model_file_path = os.path.join('model', 'pickle_med_dataset.pkl')
 csv_file_path = os.path.join('model', 'medical_insurance.csv')
 
 port_number = 1002
+
+# all is need is cofiguration to project
